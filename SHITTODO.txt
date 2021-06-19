@@ -1,0 +1,67 @@
+
+//RESPONSIVE
+=> OverlayMenu
+=> Products
+
+
+
+//GLOBALS
+
+
+//TOP HEADER
+=> Overlay Mobile Menu {OverlatMenu} -/React Portal?/-
+=!!> Make Sign up {RightNav} -/AuthO/-
+=!!> Make Log in {LoginButton} -/AuthO/-
+
+
+//SIGN UP 
+=> Make react portal for modal
+=> Form design with [ email, password, city ] -/Sketch/-
+=> Change sign up for My Orders tab
+=> If available Proceed to pay design  -/Sketch/-
+                                -> [text for security reasons - Name?, Sirname? Passport Photo? ]
+                                -> Credit Card Deets
+                                -> Payment succesful or failed send confirmation email
+
+
+
+//LOGIN
+=> Make react portal form modal
+=> Form design [email, password] -/Sketch/-
+
+
+
+//HOME
+
+
+//SHARED
+=> Arrows hover in button
+=> Fix CatalogueSubHeader
+
+
+//ALL
+
+
+//SYNTHS
+
+
+//SAMPLERS
+
+
+//DRUM MACHINES
+
+
+
+
+//INNER PAGE INTRUMENTS
+=> Route url with name
+=> Get data from DB
+
+
+
+//USER VIEW
+=> change login button to Orders
+=> change sign up to log out 
+
+
+

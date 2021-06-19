@@ -1,0 +1,584 @@
+
+/* Shared */
+/*--------*/
+
+
+/* Overlay Mobile Menu */
+/*---------------------*/
+
+/* Overlay closing cross */
+
+
+/* Menu style */
+
+.container.overlay-open {
+	/* -webkit-transform: translateX(50%);
+	transform: translateX(50%); */
+}
+
+
+.container.overlay-open::after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-contentpush {
+	background: black;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentpush.open {
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+  z-index: 250;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+
+
+
+/* Shared */
+/*--------*/
+ 
+/* All */
+/*-----*/
+
+.allSection{
+position: relative;
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
+background: #05668D;
+}
+
+/* Synth */
+/*-------*/
+
+.synthSection{
+  position: relative;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #028090;
+}
+
+.synthSection img{
+position: absolute;
+bottom: 13vh;;
+left: 22.8758169935%;
+width: 54.2483660131%;
+box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.25);
+}
+
+/* Sampler */
+/*---------*/
+
+.samplerSection{
+  position: relative;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #00A896;
+}
+
+.samplerSection img{
+  position: absolute;
+  bottom: 14vh;;
+  left: 22.8758169935%;
+  width: 54.0983606557%;
+  box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.25);
+}
+
+/* Drum Machines */
+/*---------------*/
+
+.drumSection{
+  position: relative;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #02C39A;
+}
+
+.drumSection img{
+  position: absolute;
+  bottom: 14vh;;
+  left: 22.8758169935%;
+  width: 54.0983606557%;
+  box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.25);
+}
+
+
+
+@media (max-width: 910px), screen and (orientation: portrait) {
+
+  /* Home */
+
+
+  .section{
+    text-decoration: none;
+  }
+
+  .sectionContainer{
+    position:static;
+    height: calc(25vh - (60px / 4));
+    text-decoration: none;
+  }
+
+  .allSection .sectionContainer{
+    padding-top: 60px;
+    background: #05668D;
+  }
+
+  .synthSection .sectionContainer{
+    background: #028090;
+  }
+
+  .samplerSection .sectionContainer{
+    background: #00A896;
+  }
+
+  .drumSection .sectionContainer{
+    background: #02C39A;
+  }
+
+  .synthSection img{
+    display: none;
+  }
+
+
+   .allHeader{
+    padding-top: 60px;
+  }
+
+   .synthsHeader{
+    padding-top: 60px;
+  }
+
+   .samplersHeader{
+    padding-top: 60px;
+  }
+
+   .drumMachinesHeader{
+    padding-top: 60px;
+  }
+
+}
+
+
+/* Shared Offers */
+/*---------------*/
+
+
+
+.offersHeader {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+
+.offersContentCard{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  margin: 40px 30px;
+}
+
+.offersContentCard h2{
+  position: relative;
+  margin: 0;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.offersContentCard .cardImageCointainer{
+  position: relative;
+  width: 300px;
+  height: 160px;
+  top: calc(24px + 15px);
+}
+
+.offersContentCard .cardLine{
+  position: relative;
+  width: 260px;
+  height: 1px;
+  background: #000;
+  top: calc(39px + 17px);
+  left: 20px;
+}
+
+.offersContentCard .leftText{
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  margin: 0;
+  top: calc(39px + 39px);
+  left: 20px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.offersContentCard .rightText{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  top: calc(39px + 39px);
+  right: calc(-120px + 20px);
+  text-align: right;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 600;
+}
+
+.offersContentCard a{
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  bottom: 0;
+  left: 60px;
+  font-size: 17px;
+  color: #FAFCFF;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+/* All Offers */
+/*------------*/
+
+ .allHeader{
+  background-color: #05668D;
+}
+
+
+
+/* Synth Offers */
+/*--------------*/
+
+ .synthsHeader{
+  background-color: #028090;
+}
+
+.offersContentCard .synthOffersButton{
+  background: #028090;
+  border: 1px solid #028090;
+}
+
+.offersContentCard .cardImageCointainer #arturiaMicrobrute{
+  position: absolute;
+  width: calc(140px + 24px);
+  top: calc(29px - 12px);
+  left: calc(80px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #korgMicrokorg{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(33px - 12px);
+  left: calc(50px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #novationMininova{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(31px - 12px);
+  left: calc(50px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #korgMinilogue{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(18px - 12px);
+  left: calc(50px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronAnalogKeys{
+  position: absolute;
+  width: calc(240px + 24px);
+  top: calc(24px - 12px);
+  left: calc(30px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #accessVirus{
+  position: absolute;
+  width: calc(220px + 24px);
+  top: calc(12px - 12px);
+  left: calc(40px - 12px);
+}
+
+
+
+/* Samplers Offers */
+/*-----------------*/
+
+ .samplersHeader{
+  background-color: #00A896;
+}
+
+.offersContentCard .samplerOffersButton{
+  background: #00A896;
+  border: 1px solid #00A896;
+}
+
+.offersContentCard .cardImageCointainer #korgVolcaSample{
+  position: absolute;
+  width: calc(80px + 24px);
+  top: calc(58px - 12px);
+  left: calc(110px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #akaiXR20{
+  position: absolute;
+  width: calc(120px + 24px);
+  top: calc(30px - 12px);
+  left: calc(90px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #korgElectribe{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(27px - 12px);
+  left: calc(60px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronDigitakt{
+  position: absolute;
+  width: calc(120px + 24px);
+  top: calc(22px - 12px);
+  left: calc(80px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #akaiMPClive{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(29px - 12px);
+  left: calc(60px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronOctatrack{
+  position: absolute;
+  width: calc(200px + 24px);
+  top: calc(22px - 12px);
+  left: calc(50px - 12px);
+}
+
+
+
+/* Drum Machines Offers */
+/*----------------------*/
+
+ .drumMachinesHeader{
+  background-color: #02C39A;
+}
+
+.offersContentCard .drumMachinesOffersButton{
+  background: #02C39A;
+  border: 1px solid #02C39A;
+}
+
+.offersContentCard .cardImageCointainer #korgVolcaBeats{
+  position: absolute;
+  width: calc(80px + 24px);
+  top: calc(58px - 12px);
+  left: calc(110px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #akaiTomCat{
+  position: absolute;
+  width: calc(140px + 24px);
+  top: calc(27px - 12px);
+  left: calc(80px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #rolandBoutique{
+  position: absolute;
+  width: calc(160px + 24px);
+  top: calc(46px - 12px);
+  left: calc(70px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #arturiaDrumbrute{
+  position: absolute;
+  width: calc(160px + 24px);
+  top: calc(24px - 12px);
+  left: calc(70px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #rolandAira{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(20px - 12px);
+  left: calc(60px - 12px);
+}
+
+.offersContentCard .cardImageCointainer #elektronAnalogRytm{
+  position: absolute;
+  width: calc(180px + 24px);
+  top: calc(25px - 12px);
+  left: calc(60px - 12px);
+}
+  
+/* Shared Products */
+/*-----------------*/
+
+.productConainer{
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 33% auto;
+  grid-template-rows: 60.7142857143% 39.2857142857%;
+}
+
+.photoProductContainer{
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #FAFCFF;
+}
+
+.detailsProductContainer{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #000;
+}
+
+.detailsProductContainer h2{
+  font-size: 25px;
+  color: #FAFCFF;
+  font-weight: 600;
+  margin: 33px 20px auto;
+}
+
+.dataDetailsProducts{
+  width: 100%;
+  margin: 20px 20px;
+}
+
+.detailsProductContainer p {
+  display: inline-block;
+  font-size: 14px;
+  color: #FAFCFF;
+  min-width: 35%;
+  margin: 20px 20px 0;
+}
+
+.detailsProductContainer p span{
+  font-weight: 600;
+}
+
+.inputsProductContainer{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: #FAFCFF;
+}
+
+.leftButtonSlide{
+  position: absolute;
+  right: 40px;
+  bottom: 2px;
+  width: 38px;
+  height: 38px;
+  background: #000;
+}
+
+.rightButtonSlide{
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  width: 38px;
+  height: 38px;
+  background: #000;
+}
+
+.leftButtonSlide img, .rightButtonSlide img{
+  position: absolute;
+  left: 14px;
+  top: 11px;
+}
+
+.priceProduct{
+  font-size: 14px;
+  display: inline-block;
+  margin: 70px 20px 0;
+}
+
+.priceProduct:first-of-type{
+  margin: 0 0 0 120px;
+}
+
+.priceProduct span{
+  font-size: 18px;
+}
+
+#datePickerTing{
+  opacity: 0;
+}
+
+.totalPrice{
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 0 0 220px;
+  margin-top: calc(300px + 50px);
+  width: 160px;
+}
+
+.rentSubmit{
+  width:180px;
+  height: 40px;
+  background: #05668D;
+  border: none;
+  color: #FAFCFF;
+  font-size: 22px;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+
+
+/* Arturia Microbrute Products */
+/*-----------------------------*/
+
+.photoProductContainer #arturiaMicrobrute01{
+  position: absolute;
+  width: calc(50% + 24px);
+  top: calc(25% - 12px);
+  left: calc(25% - 12px);
+  cursor: zoom-in;
+}
